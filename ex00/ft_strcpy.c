@@ -6,11 +6,11 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 13:44:47 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/20 13:53:41 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/20 13:57:49 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char *ft_strcpy(char *dest, char *src)
 {
-    
+    .
 }
