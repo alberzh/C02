@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 13:44:47 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/21 10:35:55 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/21 10:40:22 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ char *ft_strcpy(char *dest, char *src)
     return dest;
 }
 
+/*
 #include <stdio.h>
 
 int main(void)
@@ -35,3 +36,4 @@ int main(void)
     printf("String copiado: %s\n", dest);
     return 0;
 }
+*/
