@@ -1,39 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/20 13:44:47 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/21 15:48:31 by azaragoz         ###   ########.fr       */
+/*   Created: 2025/07/20 12:53:42 by azaragoz          #+#    #+#             */
+/*   Updated: 2025/07/21 17:00:38 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+#include <stdio.h>
+
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i])
+	while (src[i] && i < n)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
 
-/*
-#include <stdio.h>
+// int	main(void)
+// {
+// 	char	src[20] = "Hello, World!";
+// 	char	dest[20];
 
-int	main(void)
-{
-	char	src[] = "Hola Mundo!";
-	char	dest[50];
-
-	ft_strcpy(dest, src);
-	printf("String copiado: %s\n", dest);
-	return (0);
-}
-*/
+// 	ft_strncpy(dest, src, 8);
+// 	printf("Resultado: %s\n", dest);
+// 	return (0);
+// }
