@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 10:50:23 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/23 17:21:40 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/23 17:57:26 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_str_is_alpha(char *str)
 
 	if (!str)
 		return (1);
+	if (str[0] == '\0')
+		return (0);
 	i = 0;
 	while (str[i])
 	{
