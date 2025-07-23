@@ -6,29 +6,27 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 16:28:42 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/22 17:03:05 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/23 18:02:46 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	is_lowercase(char c)
-{
-	return (c >= 'a' && c <= 'z');
-}
-
 int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 
+	if (!str)
+		return (1);
 	if (str[0] == '\0')
 		return (0);
 	i = 0;
 	while (str[i])
 	{
-		if (!is_lowercase(str[i]))
+		if (str[i] >= 'a' && str[i] <= 'z')
+			i++;
+		else
 			return (0);
-		i++;
 	}
 	return (1);
 }
@@ -38,6 +36,7 @@ int	ft_str_is_lowercase(char *str)
 	char	str1[] = "HelloWorld";
 	char	str2[] = "helloworld";
 	char    str3[] = "hello world";
+	char	str4[] = "";
 
 	if (ft_str_is_lowercase(str1))
 		printf("'%s' is lower case.\n", str1);
@@ -51,5 +50,9 @@ int	ft_str_is_lowercase(char *str)
 		printf("'%s' is lower case.\n", str3);
 	else
 		printf("'%s' is not lower case.\n", str3);
+	if (ft_str_is_lowercase(str4))
+		printf("'%s' is lower case.\n", str4);
+	else
+		printf("'%s' is not lower case.\n", str4);
 	return (0);
 } */

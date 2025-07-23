@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 15:01:38 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/23 17:52:12 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/23 18:03:14 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	str1[] = "1234567890";
 	char	str2[] = "Hi!!1234";
@@ -50,4 +50,4 @@ int	main(void)
 	else
 		printf("'%s' is not numeric.\n", str3);
 	return (0);
-}
+} */
