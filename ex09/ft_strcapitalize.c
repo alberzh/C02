@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 10:16:47 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/24 11:23:02 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/24 12:38:56 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strcapitalize(char *str)
 	return (str);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	str1[] = "hoLa mUndo! @# ( ) / qué haceMos poR aQuí?";
 	char	str2[] = "42 is the answer. hello world!";
@@ -47,4 +47,4 @@ int	main(void)
 	printf("'%s'\n", str1);
 	printf("'%s'\n", str2);
 	return (0);
-}
+} */
