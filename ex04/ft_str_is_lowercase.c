@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 16:28:42 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/23 18:05:49 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/24 14:00:52 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ int	ft_str_is_lowercase(char *str)
 
 	if (!str)
 		return (1);
-	if (str[0] == '\0')
-		return (0);
 	i = 0;
 	while (str[i])
 	{
